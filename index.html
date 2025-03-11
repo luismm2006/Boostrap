@@ -1,0 +1,238 @@
+a <!--No borrar, peta el codigo--><!DOCTYPE html>
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+      crossorigin="anonymous" 
+    />
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body class="m-0 p-0">
+    
+    <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #000; border-bottom: 1px solid #333;" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- Botón del menú hamburguesa para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Logo centrado y título -->
+        <div class="d-flex flex-column align-items-center mx-auto">
+          <a href="./index.html"><img 
+            src="./img/ComeLoco.png" 
+            alt="kebap" 
+            class="img-fluid kebab" 
+            style="max-height: 150px;" 
+          />
+        </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#whyUs">¿Por qué nosotros?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/SobreNosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Productos & Opiniones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Dónde estamos</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+            <a href="register.html" class="btn btn-light me-2">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Video de fondo-->
+    <div class="position-relative overflow-hidden">
+      <div class="d-flex h-100" lc-helper="video-bg">
+        <video style="z-index:1;object-fit: cover; object-position: 50% 50%;" class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+          <source src="./media/videoHamburguesa.mp4" type="video/mp4">
+        </video>
+        <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+          <div class="lc-block mb-4">
+            <div editable="rich">
+              <h1 class="display-1 fw-bolder" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">¿Buscas una aventura?</h1>
+            </div>
+          </div>
+          <div class="lc-block">
+            <div editable="rich">
+              <p class="lead">Ven a ComeLoco y disfruta de una experiencia LOCA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Good things-->
+    <div class="container mt-0 mb-0 py-5" id="whyUs">
+      <h2 class="text-center mb-5">Las mejores hamburguesas</h2>
+      <div class="row text-center">
+        <!-- Frescura de Ingredientes -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+          <div class="lc-block">
+            <h3 class="my-sm-3 mb-2">
+              <i class="fas fa-bomb"></i>
+              <span class="ms-2">Ingredientes Frescos</span>
+            </h3>
+            <div>
+              <p>En ComeLoco nos comprometemos a utilizar solo los ingredientes más frescos. Cada hamburguesa está hecha con carne seleccionada y verduras frescas, garantizando un sabor inigualable en cada bocado. La frescura es clave para ofrecer una experiencia auténtica y deliciosa.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Autenticidad de las Recetas -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+          <div class="lc-block">
+            <h3 class="my-sm-3 mb-2">
+              <i class="fas fa-utensils"></i>
+              <span class="ms-2">Recetas Auténticas</span>
+            </h3>
+            <div>
+              <p>Nuestras recetas son el resultado de la tradición culinaria, con un toque innovador. Te traemos lo mejor de la cocina clásica con un giro único. Cada hamburguesa está inspirada en los sabores auténticos, preparadas con esmero y pasión para ti.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Variedad en el Menú -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+          <div class="lc-block">
+            <h3 class="my-sm-3 mb-2">
+              <i class="fas fa-th-list"></i>
+              <span class="ms-2">Variedad en el Menú</span>
+            </h3>
+            <div>
+              <p>Desde nuestras hamburguesas más clásicas hasta opciones más innovadoras, en ComeLoco tenemos algo para todos. Si eres amante de la carne, o prefieres opciones vegetarianas, encontrarás una amplia variedad de platos que se adaptan a todos los gustos.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Atención al Cliente -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+          <div class="lc-block">
+            <h3 class="my-sm-3 mb-2">
+              <i class="fas fa-heart"></i>
+              <span class="ms-2">Atención al Cliente</span>
+            </h3>
+            <div>
+              <p>En ComeLoco nos esforzamos para que cada cliente se sienta como en casa. Brindamos un servicio cercano, cálido y personalizado, asegurándonos de que tu experiencia con nosotros sea tan deliciosa como nuestras hamburguesas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Menu and Opinions -->
+    <div class="container my-5" id="menu">
+      <h2 class="text-center mb-5">Menú</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kebab Clásico</td>
+            <td>$8</td>
+            <td>Delicioso kebab con carne de cordero, salsa especial y vegetales frescos.</td>
+          </tr>
+          <tr>
+            <td>Kebab Vegetariano</td>
+            <td>$7</td>
+            <td>Un kebab lleno de verduras frescas y una salsa cremosa.</td>
+          </tr>
+          <tr>
+            <td>Kebab Picante</td>
+            <td>$9</td>
+            <td>Kebab con carne de pollo sazonada con especias picantes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="text-center mt-5">Opiniones</h3>
+      <div class="text-center">
+        <blockquote>"El mejor kebab que he probado. Sabe auténtico y es muy sabroso. ¡Recomendado!"</blockquote>
+        <cite>— Juan Pérez</cite>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5 text-center" id="contact">
+      <h2 class="mb-4">Ubicación y Contacto</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41007.127255710526!2d19.200356006889123!3d50.031117911539326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716be32014dffa1%3A0xe8e173d6821a53c5!2sCampo%20de%20concentraci%C3%B3n%20de%20Auschwitz!5e0!3m2!1ses!2ses!4v1731672880160!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p>Estamos ubicados en el centro de la ciudad. Ven y prueba nuestros deliciosos kebabs.</p>
+      <p>Dirección: Calle de la Gastronomía, 123, Sevilla</p>
+      <p>Teléfono: +34 123 456 789</p>
+    </div>
+<footer class="bg-dark text-light py-4 mt-auto"> <!-- Clase mt-auto para empujar al fondo -->
+    <div class="container">
+        <div class="row">
+            <!-- Información del Restaurante -->
+            <div class="col-md-4 mb-3">
+                <h5>Sobre Nosotros</h5>
+                <p>Disfruta del auténtico sabor del Medio Oriente en nuestro restaurante. Especializados en kebabs frescos y sabrosos, hechos con los mejores ingredientes.</p>
+            </div>
+            
+            <!-- Enlaces Rápidos -->
+            <div class="col-md-4 mb-3">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a href="menu.html" class="text-light text-decoration-none">Menú</a></li>
+                    <li><a href="contact.html" class="text-light text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-md-4 mb-3">
+                <h5>Síguenos</h5>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Kebab Restaurant. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0evHe/X7z8kI4zX90N9DtvKHb4kRmdlGdxwAs8mNBZ0uW2z17N2xW5yZ68PM8vOk" crossorigin="anonymous"></script>
+  </body>
+</html>
+
