@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+      crossorigin="anonymous" 
+    />
+    <link rel="stylesheet" href="../css/CSSgeneral.css">
+  </head>
+  <body class="m-0 p-0">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #000; border-bottom: 1px solid #333;" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- Botón del menú hamburguesa para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Logo centrado y título -->
+        <div class="d-flex flex-column align-items-center mx-auto">
+            <a href="./comeloco.html"><img 
+                src="../img/ComeLoco.png" 
+                alt="comecocos comiendo hamburguesas" 
+                class="img-fluid " 
+                style="max-height: 150px;" 
+              />
+            </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./comeloco.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./SobreNosotros.html">Sobre nosotros</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dondeEstamos.html">Dónde estamos</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <a href="../index.html" class="btn btn-outline-light me-2">Cerrar Sesión</a>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+
+  
+    <!-- Mapa de ubicación -->
+    <div class="container my-5" id="contact">
+      <h2 class="text-center mb-4">Dónde Estamos</h2>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <!-- Mapa de Google Maps en un iframe -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.3962535663325!2d-77.03687069999999!3d38.907207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzgnNDAiMTkuOCJOIDc3wrwz!5e0!3m2!1sen!2sus!4v1648546678654!5m2!1sen!2sus" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p><strong>Dirección:</strong> Calle de las Hamburguesas, 123, Ciudad Sabor, 28001</p>
+        <p><strong>Teléfono:</strong> +34 91 234 5678</p>
+        <p><strong>Horario:</strong></p>
+        <ul class="list-unstyled">
+          <li>Lunes - Viernes: 18:00 h - 22:30 h</li>
+          <li>Sábado - Domingo: 14:00 h - 23:00 h</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-auto"> <!-- Clase mt-auto para empujar al fondo -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Redes Sociales -->
+          <div class="col-md-4 mb-3">
+              <div class="d-flex justify-content-center align-items-center">
+                  <a href="#" class="text-light mx-2">
+                      <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#" class="text-light mx-2">
+                      <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                  <a href="#" class="text-light mx-2">
+                      <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+          <!-- Copyright -->
+          <div class="text-center mt-4">
+              <p>&copy; 2025 ComeLoco. Todos los derechos reservados.</p>
+          </div>
+      </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0evHe/X7z8kI4zX90N9DtvKHb4kRmdlGdxwAs8mNBZ0uW2z17N2xW5yZ68PM8vOk" crossorigin="anonymous"></script>
+  </body>
+</html>

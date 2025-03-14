@@ -15,7 +15,7 @@ a
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
       crossorigin="anonymous" 
     />
-    <link rel="stylesheet" href="../css/SobreNosotros.css">
+    <link rel="stylesheet" href="../css/CSSgeneral.css">
   </head>
   <body class="m-0 p-0">
     <!--NavBar-->
@@ -28,9 +28,9 @@ a
         
         <!-- Logo centrado y título -->
         <div class="d-flex flex-column align-items-center mx-auto">
-            <a href="../index.html"><img 
+            <a href="./comeloco.html"><img 
                 src="../img/ComeLoco.png" 
-                alt="kebap" 
+                alt="comecocos comiendo hamburguesas" 
                 class="img-fluid " 
                 style="max-height: 150px;" 
               />
@@ -41,21 +41,17 @@ a
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#whyUs">¿Por qué nosotros?</a>
+                <a class="nav-link" href="./comeloco.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menú</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutUs">Sobre nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Productos & Opiniones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Dónde estamos</a>
+              <a class="nav-link" href="./dondeEstamos.html">Dónde estamos</a>
             </li>
           </ul>
           <div class="ms-3">
-            <a href="login.html" class="btn btn-outline-light me-2">Login</a>
-            <a href="register.html" class="btn btn-light me-2">Register</a>
+            <a href="../index.html" class="btn btn-outline-light me-2">Cerrar Sesión</a>
           </div>
         </div>
       </div>
@@ -66,10 +62,13 @@ a
     <!-- About Us Section -->
     <div class="container my-5"  id="aboutUs">
         <h2 class="text-center mb-5">Sobre Nosotros</h2>
-        <p class="text-center">Desde el corazón del Medio Oriente, traemos la auténtica experiencia de kebabs a nuestra comunidad. Nuestro restaurante es un lugar de encuentro para los amantes de la buena comida, la cultura y la hospitalidad. ¡Nos encanta servirte!</p>
-      </div>
+        <p class="text-center">
+          En <strong>Comeloco</strong>, vivimos por el sabor y la pasión por las hamburguesas. Usamos <strong>ingredientes frescos</strong> y <strong>carnes de la mejor calidad</strong> para ofrecerte una <strong>experiencia única</strong> en cada bocado. Nuestro restaurante <strong>es el lugar perfecto</strong> para quienes buscan una <strong>explosión de sabor</strong>, un <strong>ambiente acogedor</strong> y un <strong>servicio de primera</strong>.  
+          ¡Ven a disfrutar de las hamburguesas más locas y deliciosas de la ciudad!
+        </p>      
+    </div>
   
-     <!-- Galería (ahora un Carousel) -->
+     <!-- Carrusel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,13 +77,13 @@ a
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/kebab1.webp" class="d-block w-100" alt="...">
+        <img src="../img/fotoCarrusel1.jpg" class="d-block w-50 mx-auto mb-5" alt="patatas fritas">
       </div>
       <div class="carousel-item">
-        <img src="img/kebab2.webp" class="d-block w-100" alt="...">
+        <img src="../img/fotoCarrusel2.jpg" class="d-block w-50 mx-auto  mb-5" alt="trabajador echando salsa">
       </div>
       <div class="carousel-item">
-        <img src="img/kebab3.webp" class="d-block w-100" alt="...">
+        <img src="../img/fotoCarrusel3.jpg" class="d-block w-50 mx-auto  mb-5" alt="una hamburguesa con patatas fritas y amistades">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -101,47 +100,31 @@ a
    
 <footer class="bg-dark text-light py-4 mt-auto"> <!-- Clase mt-auto para empujar al fondo -->
     <div class="container">
-        <div class="row">
-            <!-- Información del Restaurante -->
-            <div class="col-md-4 mb-3">
-                <h5>Sobre Nosotros</h5>
-                <p>Disfruta del auténtico sabor del Medio Oriente en nuestro restaurante. Especializados en kebabs frescos y sabrosos, hechos con los mejores ingredientes.</p>
-            </div>
-            
-            <!-- Enlaces Rápidos -->
-            <div class="col-md-4 mb-3">
-                <h5>Enlaces Rápidos</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-light text-decoration-none">Inicio</a></li>
-                    <li><a href="menu.html" class="text-light text-decoration-none">Menú</a></li>
-                    <li><a href="contact.html" class="text-light text-decoration-none">Contacto</a></li>
-                </ul>
-            </div>
-
-            <!-- Redes Sociales -->
-            <div class="col-md-4 mb-3">
-                <h5>Síguenos</h5>
-                <div class="d-flex justify-content-center">
-                    <a href="#" class="text-light mx-2">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="#" class="text-light mx-2">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="#" class="text-light mx-2">
-                        <i class="fab fa-twitter fa-2x"></i>
-                    </a>
-                </div>
+      <div class="row justify-content-center">
+        <!-- Redes Sociales -->
+        <div class="col-md-4 mb-3">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="text-light mx-2">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#" class="text-light mx-2">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#" class="text-light mx-2">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
             </div>
         </div>
-
+    </div>
         <!-- Copyright -->
         <div class="text-center mt-4">
-            <p>&copy; 2024 Kebab Restaurant. Todos los derechos reservados.</p>
+            <p>&copy; 2025 ComeLoco. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0evHe/X7z8kI4zX90N9DtvKHb4kRmdlGdxwAs8mNBZ0uW2z17N2xW5yZ68PM8vOk" crossorigin="anonymous"></script>
 </body>
 </html>
